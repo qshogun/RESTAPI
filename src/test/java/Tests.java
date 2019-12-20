@@ -123,7 +123,6 @@ public class Tests {
     }
     @Test
     public void T08_isUserNameCorrect() throws IOException {
-        baseURI = "https://jsonplaceholder.typicode.com";
         res = given()
                 .contentType("application/json")
                 .param("id", 1)
@@ -137,7 +136,6 @@ public class Tests {
     }
     @Test
     public void T09_hasUserStreetHasMoreThanFourCharacters() throws IOException {
-        baseURI = "https://jsonplaceholder.typicode.com";
         res = given()
                 .param("id", 1)
                 .when()
